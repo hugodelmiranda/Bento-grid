@@ -1,0 +1,311 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-size: 18px;
+  font-family: "DM Sans", system-ui;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  position: relative;
+  margin: 4.625rem 1.5rem;
+}
+
+section {
+  margin-bottom: 30px;
+}
+section figure img {
+  width: 100%;
+  height: auto;
+}
+
+.socialMedia {
+  background-color: hsl(256, 67%, 59%);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.socialMedia h1 {
+  font-size: 42px;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+.socialMedia h1 b {
+  color: hsl(39, 100%, 71%);
+}
+.socialMedia h1 i {
+  font-style: italic;
+}
+.socialMedia .stars {
+  text-align: center;
+  margin-top: 10px;
+}
+.socialMedia .stars img {
+  width: 70%;
+}
+.socialMedia p {
+  margin-top: 10px;
+  color: hsl(254, 88%, 90%);
+}
+
+.multiple {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+}
+.multiple h1 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.consistent {
+  background-color: hsl(39, 100%, 71%);
+  padding: 1rem 1rem 0rem 1.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+.consistent h1 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.consistent .calendar {
+  width: 100%;
+  margin-top: 20px;
+}
+.consistent .calendar img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.bestPost {
+  background-color: hsl(254, 88%, 90%);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.bestPost h1 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.bestPost p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.bestPost .bPost {
+  margin-top: 20px;
+}
+
+.followers {
+  background-color: hsl(256, 67%, 59%);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.followers h1 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.audience {
+  padding: 2rem;
+}
+.audience h1 {
+  font-size: 54px;
+  font-weight: 500;
+}
+.audience p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: hsl(0, 0%, 7%);
+}
+.audience .audienceFrowth {
+  margin-top: 30px;
+  padding-right: 3rem;
+}
+
+.create {
+  background-color: hsl(31, 66%, 93%);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.create h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(0, 0%, 7%);
+}
+.create h1 b {
+  color: hsl(256, 67%, 59%);
+  font-style: italic;
+}
+.create .createPost {
+  margin-top: 20px;
+  padding-right: 3rem;
+}
+
+.content {
+  background-color: hsl(39, 100%, 71%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(0, 0%, 7%);
+}
+.content h1 b {
+  color: hsl(256, 67%, 59%);
+  font-style: italic;
+}
+.content .aiContent {
+  margin-top: 20px;
+  padding-right: 3rem;
+}
+
+@media only screen and (min-width: 375px) {
+  body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+  }
+  .bestPost {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bestPost .bPost {
+    position: relative;
+    overflow: hidden;
+  }
+  .bestPost .bPost img {
+    width: 50%;
+    height: auto;
+  }
+  .consistent .calendar {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+  section {
+    margin: 0;
+  }
+  .container {
+    margin: 2em 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 2fr;
+    gap: 1.5rem;
+  }
+  .socialMedia {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .socialMedia .stars {
+    text-align: center;
+  }
+  .socialMedia .stars img {
+    width: 50%;
+  }
+  .multiple {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .consistent {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .consistent .calendar {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -5em;
+  }
+  .bestPost {
+    grid-column: 4/5;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    padding: 0em 0 0 1em;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+  .bestPost .bPost {
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .bestPost .bPost img {
+    width: 100%;
+    height: auto;
+  }
+  .followers {
+    grid-column: 3/5;
+    grid-row: 4/5;
+    display: flex;
+    align-items: center;
+  }
+  .audience {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .create {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .create h1 {
+    font-size: 44px;
+  }
+  .create .createPost {
+    padding-right: 0rem;
+  }
+  .content {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .content .aiContent {
+    margin: 0;
+    padding: 0;
+  }
+  section figure img {
+    width: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */
